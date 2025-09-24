@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chersbobers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .banner {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-bottom: 2px solid #333;
+        }
+
+        .ascii-text {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1;
+            white-space: pre;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background: linear-gradient(45deg, 
+                #ff0000, #ff7f00, #ffff00, #00ff00, 
+                #0000ff, #4b0082, #9400d3, #ff0000);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 3s ease-in-out infinite;
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .section {
+            background-color: #111;
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .section h2 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+
+
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #333;
+            color: #777;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .ascii-text {
+                font-size: 8px;
+            }
+            
+            .nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="banner">
+            <div class="ascii-text">  ██████ ██   ██ ███████ ██████  ███████ ██████   ██████  ██████  ███████ ██████  ███████     ██████  ██████  ███    ███ 
+██      ██   ██ ██      ██   ██ ██      ██   ██ ██    ██ ██   ██ ██      ██   ██ ██         ██      ██    ██ ████  ████ 
+██      ███████ █████   ██████  ███████ ██████  ██    ██ ██████  █████   ██████  ███████    ██      ██    ██ ██ ████ ██ 
+██      ██   ██ ██      ██   ██      ██ ██   ██ ██    ██ ██   ██ ██      ██   ██      ██    ██      ██    ██ ██  ██  ██ 
+ ██████ ██   ██ ███████ ██   ██ ███████ ██████   ██████  ██████  ███████ ██   ██ ███████ ██  ██████  ██████  ██      ██ 
+                                                                                                                        
+                                                                                                                        </div>
+        </header>
+
+        <main class="main-content">
+            <section class="section" id="home">
+                <h2>Hi</h2>
+                <p>This is my website I host other websites now with a subdomain of like idk websitename.chersbobers.com so thats cool.</p>
+            </section>
+
+            <section class="section" id="about">
+                <h2>About</h2>
+                <p>im a person who codes.</p>
+            </section>
+
+            <section class="section" id="contact">
+                <div class="tenor-gif-embed" data-postid="23820495" data-share-method="host" data-aspect-ratio="1.50943" data-width="100%"><a href="https://tenor.com/view/arson-anime-gif-23820495">
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 chersbobers.com</p>
+        </footer>
+    </div>
+</body>
+</html>
